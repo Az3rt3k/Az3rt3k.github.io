@@ -65,12 +65,21 @@
 			.legend-container {
 				display: block; /* Afficher la légende sur les écrans larges (PC) */
 			}
+			.legend-container-tel {
+				display: none;
+			}
 		}
 
 		/* Styles spécifiques pour les écrans étroits (téléphones mobiles) */
 		@media screen and (max-width: 767px) {
 			.legend-container {
 				display: none; /* Masquer la légende sur les petits écrans (téléphones) */
+			}
+			.legend-container-tel {
+				display: block;
+			}
+			    #map {
+					width: 85%; /* Réduire la largeur de la carte de 15% sur les écrans étroits (téléphones) */
 			}
 		}
         </style>
@@ -94,6 +103,9 @@
         </div>
 		<div class="legend-container" id="legend" style="position: absolute; bottom: 250px; right: 10px;">
 			<img src="./resources/legend.png" alt="Légende" style="width: 80%; height: 80%;">
+		</div>
+		<div class="legend-container-tel" id="legendtel" style="position: fixed; bottom: 10px; right: 10px;">
+			<img src="./resources/legendtel.png" alt="Légende" style="width: 80%; height: 80%;">
 		</div>
         <script src="resources/qgis2web_expressions.js"></script>
         <script src="resources/polyfills.js"></script>
