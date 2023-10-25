@@ -60,26 +60,11 @@
             text-align: center;
         }
 		
-		        /* Styles spécifiques pour les écrans larges (ordinateurs de bureau) */
-        @media screen and (min-width: 1024px) {
-            #map {
-                width: 100%; /* Ajustez la largeur en pourcentage pour s'adapter à l'écran */
-                height: 900px;
-            }
-
-            .legend-container {
-                display: block; /* Afficher la légende en bloc */
-                position: absolute;
-                top: 10px;
-                right: 10px;
-            }
-        }
-
         /* Styles spécifiques pour les écrans étroits (téléphones mobiles) */
-        @media screen and (max-width: 767px) {
+        @media screen {
             #map {
                 width: 100%; /* Ajustez la largeur en pourcentage pour s'adapter à l'écran */
-                height: 400px; /* Ajustez la hauteur pour s'adapter à l'écran */
+                height: 100%; /* Ajustez la hauteur pour s'adapter à l'écran */
             }
 
             .legend-container {
