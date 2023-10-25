@@ -60,17 +60,19 @@
             text-align: center;
         }
 		
-        /* Styles spécifiques pour les écrans étroits (téléphones mobiles) */
-        @media screen {
-            #map {
-                width: 100%; /* Ajustez la largeur en pourcentage pour s'adapter à l'écran */
-                height: 100%; /* Ajustez la hauteur pour s'adapter à l'écran */
-            }
+		/* Styles spécifiques pour les écrans larges (PC) */
+		@media screen and (min-width: 768px) {
+			.legend-container {
+				display: block; /* Afficher la légende sur les écrans larges (PC) */
+			}
+		}
 
-            .legend-container {
-                display: none; /* Masquer la légende sur les petits écrans */
-            }
-        }
+		/* Styles spécifiques pour les écrans étroits (téléphones mobiles) */
+		@media screen and (max-width: 767px) {
+			.legend-container {
+				display: none; /* Masquer la légende sur les petits écrans (téléphones) */
+			}
+		}
         </style>
         <title></title>
     </head>
